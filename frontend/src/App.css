@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #b91c1c;
+}
+
+.logo span {
+  color: #172033;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #b91c1c;
+}
+
+.login-btn {
+  border: 0;
+  padding: 10px 22px;
+  border-radius: 8px;
+  background: #b91c1c;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 570px;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: linear-gradient(135deg, #fff5f5, #ffffff);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 9px 15px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.05;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: #b91c1c;
+}
+
+.hero p {
+  max-width: 650px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.primary-btn {
+  background: #b91c1c;
+  color: white;
+}
+
+.secondary-btn {
+  background: white;
+  color: #b91c1c;
+  border: 1px solid #b91c1c;
+}
+
+.location {
+  margin-top: 25px;
+  color: #64748b;
+}
+
+/* HERO CARD */
+
+.hero-card {
+  width: 330px;
+  min-height: 330px;
+  background: #b91c1c;
+  color: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(185, 28, 28, 0.25);
+}
+
+.blood-drop {
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+
+.hero-card h2 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: #fee2e2;
+  font-size: 14px;
+}
+
+.mini-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.mini-stats strong,
+.mini-stats span {
+  display: block;
+}
+
+.mini-stats strong {
+  font-size: 20px;
+}
+
+.mini-stats span {
+  font-size: 12px;
+  color: #fecaca;
+  margin-top: 5px;
+}
+
+/* STATS */
+
+.stats {
+  padding: 30px 7%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: white;
+}
+
+.stat-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.stat-card > span {
+  font-size: 30px;
+}
+
+.stat-card h2 {
+  font-size: 24px;
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 90px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading span,
+.donor-section span,
+.emergency span {
+  color: #b91c1c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+/* BLOOD GRID */
+
+.blood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.blood-card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+}
+
+.blood-type {
+  font-size: 32px;
+  font-weight: 900;
+  color: #b91c1c;
+}
+
+.blood-card h3 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.blood-card p {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 6px;
+  background: #e2e8f0;
+  margin-top: 18px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  width: 70%;
+  background: #b91c1c;
+}
+
+.low .progress div {
+  width: 35%;
+}
+
+.critical .progress div {
+  width: 15%;
+}
+
+/* DONOR */
+
+.donor-section {
+  margin: 20px 7% 80px;
+  padding: 60px;
+  border-radius: 20px;
+  background: #172033;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.donor-section h2 {
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.donor-section p {
+  color: #cbd5e1;
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.donor-info {
+  display: flex;
+  gap: 25px;
+}
+
+.donor-info div {
+  min-width: 100px;
+  text-align: center;
+}
+
+.donor-info strong {
+  font-size: 30px;
+  color: #f87171;
+}
+
+.donor-info p {
+  margin: 5px 0 0;
+}
+
+/* EMERGENCY */
+
+.emergency {
+  margin: 0 7% 80px;
+  padding: 40px;
+  border-radius: 16px;
+  background: #fee2e2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.emergency h2 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.emergency p {
+  color: #64748b;
+}
+
+.emergency-btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #b91c1c;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 45px 7%;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+footer p {
+  color: #94a3b8;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .stats,
+  .blood-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .donor-section,
+  .emergency,
+  footer {
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .stats,
+  .blood-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .donor-section {
+    padding: 35px;
+  }
+}
